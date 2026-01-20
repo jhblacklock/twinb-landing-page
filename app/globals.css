@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --blue-700: rgba(77, 162, 255, 1);
+  --blue-800: rgba(15, 47, 76, 1);
+  --blue-900: rgba(0, 15, 29, 1);
+  --blue-light: rgba(153, 204, 252, 1);
+  --blue-pale: rgba(240, 248, 255, 1);
+  --blue-regular: rgba(2, 116, 221, 1);
+  --coral-pale: rgba(255, 211, 196, 1);
+  --coral-regular: rgba(255, 174, 148, 1);
+  --electric-indigo: rgba(85, 102, 187, 1);
+  --gold-light: rgba(205, 195, 139, 1);
+  --gold-pale: rgba(243, 237, 211, 1);
+  --gold-regular: rgba(192, 171, 60, 1);
+  --gray-700: rgba(97, 104, 109, 1);
+  --gray-heavy: rgba(34, 34, 34, 1);
+  --gray-light: rgba(221, 221, 221, 1);
+  --gray-pale: rgba(243, 239, 239, 1);
+  --green-300: rgba(190, 255, 77, 1);
+  --green-400: rgba(77, 247, 102, 1);
+  --green-700: rgba(72, 133, 24, 1);
+  --light: rgba(247, 247, 247, 1);
+  --mint-pale: rgba(218, 255, 232, 1);
+  --mint-regular: rgba(52, 225, 118, 1);
+  --orange-200: rgba(242, 238, 228, 0.89);
+  --orange-700: rgba(255, 102, 1, 1);
+  --orange-regular: rgba(255, 96, 44, 1);
+  --pale-yellow: rgba(255, 251, 226, 1);
+  --pink-400: rgba(233, 204, 255, 1);
+  --pink-700: rgba(255, 106, 218, 1);
+  --purple-400: rgba(210, 136, 255, 1);
+  --purple-700: rgba(92, 74, 222, 1);
+  --purple-light: rgba(200, 186, 255, 1);
+  --purple-medium: rgba(80, 43, 216, 1);
+  --purple-pale: rgba(240, 236, 255, 1);
+  --purple-regular: rgba(111, 75, 238, 1);
+  --system-colors-grays-black: rgba(0, 0, 0, 1);
+  --yellow-700: rgba(255, 252, 77, 1);
+  --yellow-900: rgba(255, 215, 49, 1);
+  --yellow-light: rgba(255, 247, 195, 1);
+  --yellow-light-old: rgba(250, 243, 211, 1);
+  --yellow-pale: rgba(255, 251, 231, 1);
+  --yellow-regular: rgba(253, 236, 54, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-blue-700: var(--blue-700);
+  --color-blue-800: var(--blue-800);
+  --color-blue-900: var(--blue-900);
+  --color-blue-light: var(--blue-light);
+  --color-blue-pale: var(--blue-pale);
+  --color-blue-regular: var(--blue-regular);
+  --color-coral-pale: var(--coral-pale);
+  --color-coral-regular: var(--coral-regular);
+  --color-electric-indigo: var(--electric-indigo);
+  --color-gold-light: var(--gold-light);
+  --color-gold-pale: var(--gold-pale);
+  --color-gold-regular: var(--gold-regular);
+  --color-gray-700: var(--gray-700);
+  --color-gray-heavy: var(--gray-heavy);
+  --color-gray-light: var(--gray-light);
+  --color-gray-pale: var(--gray-pale);
+  --color-green-300: var(--green-300);
+  --color-green-400: var(--green-400);
+  --color-green-700: var(--green-700);
+  --color-light: var(--light);
+  --color-mint-pale: var(--mint-pale);
+  --color-mint-regular: var(--mint-regular);
+  --color-orange-200: var(--orange-200);
+  --color-orange-700: var(--orange-700);
+  --color-orange-regular: var(--orange-regular);
+  --color-pale-yellow: var(--pale-yellow);
+  --color-pink-400: var(--pink-400);
+  --color-pink-700: var(--pink-700);
+  --color-purple-400: var(--purple-400);
+  --color-purple-700: var(--purple-700);
+  --color-purple-light: var(--purple-light);
+  --color-purple-medium: var(--purple-medium);
+  --color-purple-pale: var(--purple-pale);
+  --color-purple-regular: var(--purple-regular);
+  --color-system-colors-grays-black: var(--system-colors-grays-black);
+  --color-yellow-700: var(--yellow-700);
+  --color-yellow-900: var(--yellow-900);
+  --color-yellow-light: var(--yellow-light);
+  --color-yellow-light-old: var(--yellow-light-old);
+  --color-yellow-pale: var(--yellow-pale);
+  --color-yellow-regular: var(--yellow-regular);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
