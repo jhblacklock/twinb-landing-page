@@ -1,4 +1,4 @@
-export const OpsFocused = (): JSX.Element => {
+export const OpsFocused = () => {
   const floatingTextItems = [
     "Stop the Wrong Work",
     "Decide Earlier",
